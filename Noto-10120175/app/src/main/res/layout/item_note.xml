@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:elevation="12dp">
+
+        <RelativeLayout
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="title"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/category_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="category"
+                android:textColor="@color/black"
+                android:layout_below="@id/title_note"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/desc_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/category_note"
+                android:layout_marginVertical="10dp"
+                android:ellipsize="end"
+                android:maxWidth="280dp"
+                android:maxLength="110"
+                android:maxLines="2"
+                android:text="desc"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/date_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/desc_note"
+                android:layout_alignParentStart="true"
+                android:text="date"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/baseline_keyboard_arrow_right_24"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
